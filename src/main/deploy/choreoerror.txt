@@ -1,0 +1,101 @@
+{
+        "timestamp": 20.38037109375,
+        "seqNumber": 7383,
+        "numOccur": 1,
+        "errorCode": 1,
+        "flags": 1,
+        "details": "Unhandled exception: java.lang.NullPointerException: Cannot read the array length because \"<parameter1>\" is null",
+        "location": "java.base/java.util.Arrays.stream(Unknown Source)",
+        "callStack": "\tat java.base/java.util.Arrays.stream(Unknown Source)\n\tat com.choreo.lib.ChoreoTrajectoryState.flipped(ChoreoTrajectoryState.java:147)\n\tat com.choreo.lib.ChoreoTrajectory.flipped(ChoreoTrajectory.java:173)\n\tat frc.robot.Subsystems.Swerve.Swerve.lambda$choreoFullFollowSwerveCommand$24(Swerve.java:426)\n\tat edu.wpi.first.wpilibj2.command.FunctionalCommand.initialize(FunctionalCommand.java:52)\n\tat edu.wpi.first.wpilibj2.command.SequentialCommandGroup.execute(SequentialCommandGroup.java:81)\n\tat edu.wpi.first.wpilibj2.command.CommandScheduler.run(CommandScheduler.java:285)\n\tat frc.robot.Robot.robotPeriodic(Robot.java:92)\n\tat edu.wpi.first.wpilibj.IterativeRobotBase.loopFunc(IterativeRobotBase.java:381)\n\tat org.littletonrobotics.junction.LoggedRobot.startCompetition(LoggedRobot.java:117)\n\tat edu.wpi.first.wpilibj.RobotBase.runRobot(RobotBase.java:365)\n\tat edu.wpi.first.wpilibj.RobotBase.startRobot(RobotBase.java:453)\n\tat frc.robot.Main.main(Main.java:13)\n",
+        "messageType": 0
+    },
+    {
+        "messageType": 2,
+        "timestamp": 20.380859375,
+        "seqNumber": 7384,
+        "line": "Error at java.base/java.util.Arrays.stream(Unknown Source): Unhandled exception: java.lang.NullPointerException: Cannot read the array length because \"<parameter1>\" is null"
+    },
+    {
+        "messageType": 2,
+        "timestamp": 20.38134765625,
+        "seqNumber": 7385,
+        "line": "\tat java.base/java.util.Arrays.stream(Unknown Source)"
+    },
+    {
+        "messageType": 2,
+        "timestamp": 20.3818359375,
+        "seqNumber": 7386,
+        "line": "\tat com.choreo.lib.ChoreoTrajectoryState.flipped(ChoreoTrajectoryState.java:147)"
+    },
+    {
+        "messageType": 2,
+        "timestamp": 20.38232421875,
+        "seqNumber": 7387,
+        "line": "\tat com.choreo.lib.ChoreoTrajectory.flipped(ChoreoTrajectory.java:173)"
+    },
+    {
+        "messageType": 2,
+        "timestamp": 20.3828125,
+        "seqNumber": 7388,
+        "line": "\tat frc.robot.Subsystems.Swerve.Swerve.lambda$choreoFullFollowSwerveCommand$24(Swerve.java:426)"
+    },
+    {
+        "messageType": 2,
+        "timestamp": 20.38330078125,
+        "seqNumber": 7389,
+        "line": "\tat edu.wpi.first.wpilibj2.command.FunctionalCommand.initialize(FunctionalCommand.java:52)"
+    },
+    {
+        "messageType": 2,
+        "timestamp": 20.38330078125,
+        "seqNumber": 7390,
+        "line": "\tat edu.wpi.first.wpilibj2.command.SequentialCommandGroup.execute(SequentialCommandGroup.java:81)"
+    },
+    {
+        "messageType": 2,
+        "timestamp": 20.3837890625,
+        "seqNumber": 7391,
+        "line": "\tat edu.wpi.first.wpilibj2.command.CommandScheduler.run(CommandScheduler.java:285)"
+    },
+    {
+        "messageType": 2,
+        "timestamp": 20.3837890625,
+        "seqNumber": 7392,
+        "line": "\tat frc.robot.Robot.robotPeriodic(Robot.java:92)"
+    },
+    {
+        "messageType": 2,
+        "timestamp": 20.38427734375,
+        "seqNumber": 7393,
+        "line": "\tat edu.wpi.first.wpilibj.IterativeRobotBase.loopFunc(IterativeRobotBase.java:381)"
+    },
+    {
+        "messageType": 2,
+        "timestamp": 20.384765625,
+        "seqNumber": 7394,
+        "line": "\tat org.littletonrobotics.junction.LoggedRobot.startCompetition(LoggedRobot.java:117)"
+    },
+    {
+        "messageType": 2,
+        "timestamp": 20.384765625,
+        "seqNumber": 7395,
+        "line": "\tat edu.wpi.first.wpilibj.RobotBase.runRobot(RobotBase.java:365)"
+    },
+    {
+        "messageType": 2,
+        "timestamp": 20.38525390625,
+        "seqNumber": 7396,
+        "line": "\tat edu.wpi.first.wpilibj.RobotBase.startRobot(RobotBase.java:453)"
+    },
+    {
+        "timestamp": 20.38525390625,
+        "seqNumber": 7397,
+        "numOccur": 1,
+        "errorCode": 1,
+        "flags": 0,
+        "details": "The robot program quit unexpectedly. This is usually due to a code error.\n  The above stacktrace can help determine where the error occurred.\n  See https://wpilib.org/stacktrace for more information.",
+        "location": "edu.wpi.first.wpilibj.RobotBase.runRobot(RobotBase.java:379)",
+        "callStack": "",
+        "messageType": 1
+
+    }
