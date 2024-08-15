@@ -11,6 +11,7 @@ import org.littletonrobotics.junction.networktables.NT4Publisher;
 import org.littletonrobotics.junction.wpilog.WPILOGReader;
 import org.littletonrobotics.junction.wpilog.WPILOGWriter;
 
+import com.choreo.lib.Choreo;
 import com.ctre.phoenix6.SignalLogger;
 import com.pathplanner.lib.path.PathPlannerPath;
 import com.pathplanner.lib.path.PathPlannerTrajectory;
@@ -22,6 +23,7 @@ import edu.wpi.first.wpilibj.DriverStation.Alliance;
 import edu.wpi.first.wpilibj.PowerDistribution.ModuleType;
 import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.CommandScheduler;
+import edu.wpi.first.wpilibj2.command.Commands;
 import edu.wpi.first.wpilibj2.command.SequentialCommandGroup;
 import frc.robot.autons.AutonomousSelector.modes;
 import frc.robot.autons.modes.FOUR_HALF_PIECE;
@@ -37,6 +39,7 @@ import frc.robot.autons.modes.TWO_PIECE_AMP_ONE;
 import frc.robot.autons.modes.TWO_PIECE_MID;
 import frc.robot.autons.modes.TWO_PIECE_SOURCE;
 import frc.robot.autons.modes.TWO_PIECE_SOURCE_THREE;
+import frc.robot.autons.modes.choreotest;
 
 public class Robot extends LoggedRobot {
   private Command m_autonomousCommand;
@@ -96,6 +99,7 @@ public class Robot extends LoggedRobot {
   @Override
   public void disabledPeriodic() {
     if (DriverStation.getAlliance().isPresent() && !built){
+
     mid_preload = new PRELOAD_MID(m_robotContainer.getSwerve(), m_robotContainer.getSuperstructure());
     mid_four_half_piece = new FOUR_HALF_PIECE(m_robotContainer.getSwerve(), m_robotContainer.getSuperstructure());
     mid_2p_b = new TWO_PIECE_MID(m_robotContainer.getSwerve(), m_robotContainer.getSuperstructure());
@@ -120,7 +124,7 @@ public class Robot extends LoggedRobot {
 
   @Override
   public void autonomousInit() {
-    if(m_robotContainer.getAutonomousCommand() == modes.MID_PRELOAD){
+     if(m_robotContainer.getAutonomousCommand() == modes.MID_PRELOAD){
       m_autonomousCommand = mid_preload;
     }
     else if(m_robotContainer.getAutonomousCommand() == modes.MID_2p_B){

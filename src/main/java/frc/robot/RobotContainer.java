@@ -4,6 +4,8 @@
 
 package frc.robot;
 
+import com.choreo.lib.Choreo;
+
 import edu.wpi.first.wpilibj.DriverStation;
 import edu.wpi.first.wpilibj.XboxController;
 import edu.wpi.first.wpilibj.DriverStation.Alliance;
@@ -87,6 +89,8 @@ public class RobotContainer {
 
     controller.start().onTrue(new InstantCommand(() -> superstructure.disablingElevator()));
 
+    controller.a().onTrue(s_swerve.runChoreoTraj(Choreo.getTrajectory("2pOne")));
+
     controller.b().onTrue(new InstantCommand(() -> s_swerve.zeroGyro()));
 
     controller.rightBumper().whileTrue(new AmpDriveAssistCommand(s_swerve, superstructure));
@@ -94,7 +98,6 @@ public class RobotContainer {
     controller.rightTrigger().whileTrue(new SpeakerDriveAssistCommand(s_swerve));
 
     controller.leftBumper().onTrue((new InstantCommand(() -> superstructure.setState(SuperstructureStates.PREPARE_AMP_ELEVATOR_B))));
-
   }
   private void configureDefaultCommands() {
    
